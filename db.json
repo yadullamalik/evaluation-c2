@@ -1,26 +1,15 @@
 {
   "houses": [
     {
-      "name": "",
-      "ownername": "",
-      "address": "",
-      "areacode": "",
-      "rent": "",
-      "bachelor": "",
-      "married": "",
-      "image": "",
-      "id": 1
-    },
-    {
       "name": "h",
-      "ownername": "a",
+      "ownerName": "avaf",
       "address": "safg",
       "areacode": "123",
       "rent": "11",
       "bachelor": true,
       "married": "",
       "image": "na",
-      "id": 2
+      "id": 1
     }
   ]
 }

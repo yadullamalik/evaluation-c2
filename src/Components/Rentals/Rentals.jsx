@@ -7,8 +7,10 @@ export const Rentals = () => {
   useEffect(() => {
     getData();
   }, []);
-  const getData = (res) => {
-    axios.get(`http://localhost:8080/houses`).then(setShow(res.data));
+  const getData = () => {
+    axios.get(`http://localhost:8080/houses`).then((res) => {
+      setShow(res.data);
+    });
   };
 
   return (

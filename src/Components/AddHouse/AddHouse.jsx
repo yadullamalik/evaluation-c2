@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 export const AddHouse = () => {
   const [data, setData] = useState({
     name: "",
-    ownername: "",
+    ownerName: "",
     address: "",
-    areacode: "",
+    areaCode: "",
     rent: "",
     bachelor: "",
     married: "",
@@ -27,9 +27,9 @@ export const AddHouse = () => {
     axios.post(`http://localhost:8080/houses`, data).then(
       setData({
         name: "",
-        ownername: "",
+        ownerName: "",
         address: "",
-        areacode: "",
+        areaCode: "",
         rent: "",
         bachelor: "",
         married: "",
@@ -52,10 +52,10 @@ export const AddHouse = () => {
         <br />
         <label>ownerName</label>
         <input
-          value={data.ownername}
+          value={data.ownerName}
           type="text"
           className="ownerName"
-          name="ownername"
+          name="ownerName"
           onChange={handleChange}
           required
         />
@@ -72,10 +72,10 @@ export const AddHouse = () => {
         <br />
         <label>areaCode</label>
         <input
-          value={data.areacode}
+          value={data.areaCode}
           type="text"
           className="areaCode"
-          name="areacode"
+          name="areaCode"
           onChange={handleChange}
           required
         />
