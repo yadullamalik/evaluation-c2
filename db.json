@@ -4,12 +4,45 @@
       "name": "h",
       "ownerName": "avaf",
       "address": "safg",
-      "areacode": "123",
+      "areaCode": "123",
       "rent": "11",
       "bachelor": true,
       "married": "",
       "image": "na",
       "id": 1
+    },
+    {
+      "name": "",
+      "ownerName": "",
+      "address": "",
+      "areaCode": "",
+      "rent": "",
+      "bachelor": "",
+      "married": "",
+      "image": "",
+      "id": 2
+    },
+    {
+      "name": "",
+      "ownerName": "",
+      "address": "",
+      "areaCode": "",
+      "rent": "",
+      "bachelor": "",
+      "married": "",
+      "image": "",
+      "id": 3
+    },
+    {
+      "name": "yadulla malik shaik",
+      "ownerName": "adf",
+      "address": "adsf",
+      "areaCode": "dfsa",
+      "rent": "fas",
+      "bachelor": false,
+      "married": true,
+      "image": "na",
+      "id": 4
     }
   ]
 }

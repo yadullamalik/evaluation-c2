@@ -16,11 +16,51 @@ export const Rentals = () => {
   return (
     <div className="rentalContainer">
       <div className="sortingButtons">
-        <button className="sortById">Sort by ID</button>
-        <button className="sortByRentAsc">Rent Low to high</button>
-        <button className="sortByRentDesc">Rent High to low</button>
-        <button className="sortByAreaAsc">Area Low to high</button>
-        <button className="sortByAreaDesc">Area High to Low</button>
+        <button
+          onClick={() => {
+            let arr = show.sort((a, b) => b.id - a.id);
+            setShow([...arr]);
+          }}
+          className="sortById"
+        >
+          Sort by ID
+        </button>
+        <button
+          onClick={() => {
+            let arr = show.sort((a, b) => +a.rent - +b.rent);
+            setShow([...arr]);
+          }}
+          className="sortByRentAsc"
+        >
+          Rent Low to high
+        </button>
+        <button
+          onClick={() => {
+            let arr = show.sort((a, b) => +b.rent - +a.rent);
+            setShow([...arr]);
+          }}
+          className="sortByRentDesc"
+        >
+          Rent High to low
+        </button>
+        <button
+          onClick={() => {
+            let arr = show.sort((a, b) => +a.areaCode - +b.areaCode);
+            setShow([...arr]);
+          }}
+          className="sortByAreaAsc"
+        >
+          Area Low to high
+        </button>
+        <button
+          onClick={() => {
+            let arr = show.sort((a, b) => +b.areaCode - +a.areaCode);
+            setShow([...arr]);
+          }}
+          className="sortByAreaDesc"
+        >
+          Area High to Low
+        </button>
       </div>
       <input
         className="searchAddress"
