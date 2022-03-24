@@ -23,8 +23,7 @@ export const AddHouse = () => {
       [name]: value,
     });
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     axios.post(`http://localhost:8080/houses`, data).then(
       setData({
         name: "",

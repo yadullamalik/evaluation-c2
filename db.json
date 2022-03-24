@@ -43,6 +43,17 @@
       "married": true,
       "image": "na",
       "id": 4
+    },
+    {
+      "name": "",
+      "ownerName": "",
+      "address": "",
+      "areaCode": "",
+      "rent": "",
+      "bachelor": "",
+      "married": "",
+      "image": "",
+      "id": 5
     }
   ]
 }
